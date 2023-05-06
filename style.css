@@ -1,0 +1,155 @@
+@import url(../../main.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    cursor: auto;
+}
+
+body {
+    width: 100%;
+}
+
+.bottomReveal {
+    background: linear-gradient(45deg, #35ff46 0%, #a371ff 100%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-top: 5vh;
+    font-weight: bold;
+    color: #ffffff;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.322));
+}
+
+#main-div {
+    display: flex;
+    width: 100%;
+}
+
+#left-side , #right-side {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#equal {
+    font-size: 12rem;
+    font-weight: 800;
+    margin-top: 30vh;
+    color: rgb(44, 44, 44);
+}
+
+select {
+    width: 40%;
+    height: 7vh;
+    border: none;
+    font-size: 1rem;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    box-shadow: 5px 5px 20px #0000002a;
+}
+
+.img1 , .img2 { 
+    display: none;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.unit1 , .unit2 {
+    position: absolute;
+    text-align: center;
+    font-size: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: rgb(44, 44, 44);
+    display: none;
+}
+
+.img-div {
+    width: 40%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 5vh;
+}
+
+#one , #result {
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(44, 44, 44);
+    text-align: center;
+    margin-top: 15vh;
+}
+
+#meters1 , #meters2 {
+    display: block;
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .bottomReveal {
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    #main-div {
+        flex-direction: column;
+    }
+    
+    #left-side , #right-side {
+        width: 100%;
+        height: unset;
+        justify-content: space-around;
+        height: 30vh;
+        margin-top: 2rem;
+    }
+
+    .unit1, .unit2, #one, #result {
+        font-size: 2rem;
+    }
+
+    .img-div {
+        margin-top: 0;
+        height: 100%;
+    }
+
+    .img1, .img2 {
+        width: unset;
+        height: 10rem;
+    }
+
+    select {
+        padding: 0;
+        padding-left: 10px;
+        width: 80%;
+        margin-top: 0;
+    }
+
+    #equal {
+        margin: unset;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 8rem;
+        line-height: 100%;
+    }
+
+    #one {
+        
+    }
+
+}
